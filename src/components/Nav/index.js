@@ -1,18 +1,22 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
+    const { currentPage, setCurrentPage} = props;
 
   return (
     <header>
-         <h1>
-         <Link to='/' >Mohamed Abdullahi</Link>
-        </h1>
+         <h1>Mohamed Abdullahi</h1>
         <nav className='Nav'>
             <ul>
-               <Link to='/' className='link' >About Me</Link>
-               <Link to='/' className='link' >Projects</Link>
-               <Link to='/' className='link' >Contact-Info</Link>
+               <li className={currentPage === 'about' ? 'navActive': 'link'} >
+               <span onClick={() => setCurrentPage('about')}>About Me</span>
+               </li>
+               <li className={currentPage === 'projects' ? 'navActive': 'link'} >
+               <span onClick={() => setCurrentPage('projects')}>Projects</span>
+               </li>
+               <li className={currentPage === 'contact' ? 'navActive': 'link'} >
+               <span onClick={() => setCurrentPage('contact')}>Contact-Info</span>
+               </li>
             </ul>
         </nav>
     </header>
