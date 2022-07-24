@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #07352c;
+  --secondary-color: #90e2d2;
+  --tertiary-color: #1abc9c;
+}
+
 .App {
   text-align: center;
 }
@@ -37,7 +43,135 @@
   }
 }
 
+  /*header*/
+  header {
+  display: grid;
+  grid-template-areas: 'logo nav';
+  background-color: #282c34;
+  }
+
+.Nav {
+  clear: both;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  position: relative;
+}
+
+
+  header h1 {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+
+  header a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .link {
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: transparent;
+    border: none;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    width: auto;
+    margin-left: 5%;
+    letter-spacing: 0.05em;
+  }
+  
+  .link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: .5s ease;
+  }
+  
+  .link:hover {
+    transition-delay: .5s;
+  }
+  
+  .link:hover::before {
+    width: 100%;
+  }
+  
+  .link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .link:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+
+
+
+/*end header*/
+
 h1 {
   color: #282c34;
   
 }
+
+section {
+  padding: 25px;
+}
+
+.headshot {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid #272133;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 7px 10px #282c34;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.section-title {
+  font-size: 36px;
+  color: #282c34;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 50%;
+}
+
+.me p {
+  line-height: 1.7;
+  color: #282c34;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.me {
+  background-color: white;
+}
+
