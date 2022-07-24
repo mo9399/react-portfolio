@@ -4,8 +4,7 @@ function Nav(props) {
     const { currentPage, setCurrentPage} = props;
 
   return (
-    <header>
-         <h1>Mohamed Abdullahi</h1>
+    
         <nav className='Nav'>
             <ul>
                <li className={currentPage === 'about' ? 'navActive': 'link'} >
@@ -19,7 +18,7 @@ function Nav(props) {
                </li>
             </ul>
         </nav>
-    </header>
+    
   );
 }
 

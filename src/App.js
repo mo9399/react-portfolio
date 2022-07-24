@@ -1,16 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import About from './components/About';
-import Nav from './components/Nav';
+import Header from './components/Header';
+import Projects from './components/Projects';
 
 
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('about');
+
+  const page = () => {
+    switch(currentPage) {
+      case 'about': return <About/>;
+      case 'projects': return <Projects/>
+      ///case 'contact': return <Contact/>
+      default: return
+    }
+  };
+
+
   return (
     <div>
-      <Nav></Nav>
+      <Header
+       setCurrentPage={setCurrentPage} currentPage={currentPage}>
+      </Header>
       <main>
-        <About></About>
+        {page()}
       </main>
     </div>
   );

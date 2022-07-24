@@ -64,6 +64,7 @@
     font-size: 35px;
     margin: 0;
     text-shadow: 0 0 5px rgb(0, 0, 0);
+    color: #ffffff;
   }
 
   header a {
@@ -130,7 +131,7 @@
 /*end header*/
 
 h1 {
-  color: #282c34;
+  color: #ffffff;
   
 }
 
@@ -175,3 +176,44 @@ section {
   background-color: white;
 }
 
+
+.card-body {
+  background: lightgray;
+  border: 1px solid #272133;
+  box-shadow: 0 7px 25px rgb(0, 0, 0);
+ }
+
+ .card {
+  overflow: hidden;
+  box-shadow: 0 2px 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+  flex: 33.33%;
+}
+
+.card-title {
+  padding: .5rem;
+  font-weight: bolder;
+  font-size: 17px;
+  text-transform:uppercase;
+  color: #272133;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .project-img {
+    height: 12rem;
+    width: 100%;
+    border: 1px solid #272133;
+    object-fit: cover;
+    }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(12rem, 20rem));
+    padding: 10px 10px 10px 10px;
+    justify-content: center;
+  }  
