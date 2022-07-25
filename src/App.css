@@ -135,6 +135,14 @@ h1 {
   
 }
 
+h4 {
+  text-align: center;
+  font-size: 35px;
+  color: #272133;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
 section {
   padding: 25px;
 }
@@ -155,11 +163,11 @@ section {
 }
 
 .section-title {
-  font-size: 36px;
-  color: #282c34;
   text-align: center;
-  margin: 0 auto 20px auto;
-  width: 50%;
+  font-size: 35px;
+  color: #272133;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
 }
 
 .me p {
