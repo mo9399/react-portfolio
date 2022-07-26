@@ -6,7 +6,7 @@ function Header(props) {
 
     return (
         <header>
-             <h1 href='/'>Mohamed Abdullahi</h1>
+             <h1 href='about'>Mohamed Abdullahi</h1>
             <div>
                 <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}></Nav>
             </div>

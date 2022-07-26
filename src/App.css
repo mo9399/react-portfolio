@@ -56,15 +56,18 @@
   height: auto;
   text-align: right;
   position: relative;
+  font-family: 'Aladin', cursive;
 }
 
 
   header h1 {
     font-weight: bold;
-    font-size: 35px;
+    font-size: 55px;
     margin: 0;
+    padding-top: 20px;
     text-shadow: 0 0 5px rgb(0, 0, 0);
     color: #ffffff;
+    font-family: 'Aladin', cursive;
   }
 
   header a {
@@ -87,6 +90,7 @@
     width: auto;
     margin-left: 5%;
     letter-spacing: 0.05em;
+    font-size: 25px;
   }
   
   .link::before {
@@ -137,10 +141,12 @@ h1 {
 
 h4 {
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
   color: #272133;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-decoration: underline;
+  cursor: default;
+  font-family: 'Aladin', cursive;
 }
 
 section {
@@ -153,7 +159,7 @@ section {
   border-radius: 50%;
   border: 2px solid #272133;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-shadow: 0 7px 10px #282c34;
   display: flex;
   margin-left: auto;
@@ -164,10 +170,11 @@ section {
 
 .section-title {
   text-align: center;
-  font-size: 35px;
+  font-size: 50px;
   color: #272133;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-decoration: underline;
+  font-family: 'Aladin', cursive;
 }
 
 .me p {
@@ -176,8 +183,9 @@ section {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 35px;
   text-align: center;
+  font-family: 'Aladin', cursive;
 }
 
 .me {
@@ -209,6 +217,7 @@ section {
   text-transform:uppercase;
   color: #272133;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Aladin', cursive;
   }
 
   .project-img {
@@ -226,9 +235,14 @@ section {
     justify-content: space-around;
   }  
 
+  .row {
+    flex: 1;
+    
+  }
+
   .project {
     text-align: center;
-    font-size: 35px;
+    font-size: 55px;
     color: #272133;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: underline;
@@ -239,6 +253,7 @@ section {
     margin: 50px auto;
     background-color: #49515f;
     border:1px solid black ;
+    font-family: 'Aladin', cursive;
 }
 
 label {
@@ -248,7 +263,7 @@ label {
   .feedback {
     color: #ffffff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Aladin', cursive;
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
@@ -284,12 +299,69 @@ label {
     transition: all 0.3s;
     margin-top: -4px;
     font-weight: 700;
+    font-family: 'Aladin', cursive;
   }
 
   [type='submit']:hover {background: #cc4949;}
 
-  h4 {
+  h4,h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
+    font-family: 'Aladin', cursive;
   }
 
+  
+
+  footer {
+    font-size: 48px;
+    justify-content: center;
+    background-color: #282c34;
+    padding-right: calc(1rem * 0.5);
+    padding-left: calc(1rem * 0.5);
+  }
+  
+  footer a {
+    color: #cc6666;
+    opacity: 0.5;
+    margin: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    size: 50px;
+  }
+  
+  footer a:hover {
+    opacity: 1;
+  }
+
+  .px-1 {
+    padding-right: calc(1rem * 0.5);
+    padding-left: calc(1rem * 0.5);
+  }
+
+  .navActive {
+    color: #cc6666;
+    cursor: default;
+    text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.5);
+  }
+
+  .social-container {
+    padding: 25px 50px;
+    text-align: center;
+  }
+
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+
+  a.linked {
+    color:#ffffff;
+  }
+
+  a.github {
+    color: #fff;
+  }
