@@ -3,6 +3,9 @@ import './App.css';
 import About from './components/About';
 import Header from './components/Header';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
 
 
 
@@ -13,7 +16,7 @@ function App() {
     switch(currentPage) {
       case 'about': return <About/>;
       case 'projects': return <Projects/>
-      ///case 'contact': return <Contact/>
+      case 'contact': return <Contact/>
       default: return
     }
   };
@@ -22,11 +25,11 @@ function App() {
   return (
     <div>
       <Header
-       setCurrentPage={setCurrentPage} currentPage={currentPage}>
-      </Header>
+       setCurrentPage={setCurrentPage} currentPage={currentPage}></Header>
       <main>
         {page()}
       </main>
+      <Footer />
     </div>
   );
 }
