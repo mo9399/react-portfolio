@@ -2,9 +2,17 @@ import React from "react";
 import Perfect from '../../assets/perfect.jpg';
 import StudyBuddy from '../../assets/studybuddy.png';
 import RunBuddy from '../../assets/runbuddy.jpg';
+import Griller from '../../assets/Griller.png';
+
 import Cards from "../Card";
 
 const project = [
+    {
+        name: 'Griller',
+        image: Griller,
+        link: 'https://github.com/mo9399/Griller',
+        github: 'https://github.com/mo9399/Griller'
+    },
     {
         name: 'Study Buddy',
         image: StudyBuddy,
